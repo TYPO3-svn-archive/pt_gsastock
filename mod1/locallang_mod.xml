@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for module &quot;user_txptgsastockM1&quot; - header, description</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="mlang_tabs_tab">Stock Management</label>
+			<label index="mlang_labels_tabdescr">Stock Management for General Shop Application</label>
+			<label index="mlang_labels_tablabel">Stock Management</label>
+			<label index="delete_stock_count_infomessage">Delete stock count rows with timestamp smaller than specified (empty = delete all)</label>
+			<label index="delete_stockcount_submit_button">Delete stockcount</label>
+			<label index="stock_count_deleted_message">Stock count have been deleted</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="mlang_tabs_tab">Bestandsverwaltung</label>
+			<label index="mlang_labels_tabdescr">Bestandsverwaltung für General Shop Application</label>
+			<label index="mlang_labels_tablabel">Bestandsverwaltung</label>
+			<label index="delete_stock_count_infomessage">Lösche Bestandsverwaltungsdatensätz mit einem Timestamp kleiner als angegeben (leer = alle löschen)</label>
+			<label index="delete_stockcount_submit_button">Lösche Datensätze</label>
+			<label index="stock_count_deleted_message">Bestandsdatensätze wurden gelöscht</label>
+		</languageKey>
+	</data>
+</T3locallang>

@@ -1,0 +1,33 @@
+********************************************************************************
+DevDoku.txt: Development notes for pt_gsastock
+Autor: Michael Knoll <knoll@punkt.de>
+
+Legend:
+
+FIX: fixes a bug
+CHG: inform about changed items
+ADD: added feature
+RMV: removed Item
+RFT: refactoring / code cleanup
+********************************************************************************
+
+
+v0.0.1dev1:
+----------
+
++ (ry21): Inserted "hard-coded" table prefixes for mini DB. This should be solved different
++ (ry21): Fixed major bug in counting stock when checkout is cancelled 
+    TODO + (ry21): Use session to check for temporary stock data on cart --> checkout process
+
+
+ToDo:
+=====
+
+- (ry21): IMPORTANT: Check updateArtDistryQtyChangesConsequencesHook for writing correct information into session
+- (ry21): Make acutal stock counting configurable via TS
+- (ry21): Make Template content configurable via TS (show blocks yes / no) via conditions (compare article display in shop)
+- (ry21): Add hook for not allowing article to be put in cart
+- (ry21): Add treshold sets to article categories
+- (ry21): Make deletion of temporary records more comfortable (don't use timestamp)
+- (ry21): Add API for importing stock information
+- (ry21): Use session to check for temporary stock data on cart --> checkout process

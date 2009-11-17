@@ -1,0 +1,57 @@
+##################################################################
+## TS Configuration for pt_gsastock
+##
+## Michael Knoll <knoll@punkt.de>
+## 2009-03-20
+##################################################################
+
+## General extension configuration
+config.tx_ptgsastock {
+
+    ## Classes for renderers
+    tresholdRendererClass = EXT:pt_gsastock/res/renderers/class.tx_ptgsastock_stockTresholdRenderer.php:tx_ptgsastock_stockTresholdRenderer
+    articleRendererClass = EXT:pt_gsastock/res/renderers/class.tx_ptgsastock_stockArticleRenderer.php:tx_ptgsastock_stockArticleRenderer
+    statusRendererClass = EXT:pt_gsastock/res/renderers/class.tx_ptgsastock_stockStatusRenderer.php:tx_ptgsastock_stockStatusRenderer
+
+
+    
+    ## Configuration for stock status renderer
+    stockStatusRenderer {
+        
+        ## Smarty Template File Path
+        templateFile = EXT:pt_gsastock/res/smarty_tpl/stock_status.tpl.html
+        
+        ## Path to stock status image files
+        stockStatusImagePath = fileadmin/img/stock_status/
+        
+    }
+
+
+    
+    ## Configuration for stock treshold renderer
+    stockTresholdRenderer {
+    
+        ## Smarty Template File Path
+        templateFile = EXT:pt_gsastock/res/smarty_tpl/stock_treshold.tpl.html
+        
+    }
+    
+    
+    
+    ## Configuration for stock article renderer
+    stockArticleRenderer {
+    
+        ## Smarty Template File Path
+        templateFile = EXT:pt_gsastock/res/smarty_tpl/stock_article.tpl.html
+        
+    }
+    
+    
+    
+    ## Classes for calculators
+    exec_checkout_articleDataHookClass = EXT:pt_gsastock/res/calculators/class.tx_ptgsastock_exec_checkout_articleDataHook.php:tx_ptgsastock_exec_checkout_articleDataHook
+    processPostOrderProcessingHookClass = EXT:pt_gsastock/res/calculators/class.tx_ptgsastock_processPostOrderProcessingHook.php:tx_ptgsastock_processPostOrderProcessingHook
+    updateArtDistrQtyChangesConsequencesHookClass = EXT:pt_gsastock/res/calculators/class.tx_ptgsastock_updateArtDistrQtyChangesConsequencesHook.php:tx_ptgsastock_updateArtDistrQtyChangesConsequencesHook
+    
+    
+}

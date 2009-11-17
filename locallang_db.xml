@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'pt_gsastock'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_ptgsastock_stockcount">Open Stock Counts</label>
+			<label index="tx_ptgsastock_stockcount.base_order">Order</label>
+			<label index="tx_ptgsastock_stockcount.order_state">Order State</label>
+			<label index="tx_ptgsastock_stockcount.qty">Quantity</label>
+			<label index="tx_ptgsastock_stockcount.artikel_nummer">Article ID</label>
+			<label index="tx_ptgsastock_stock_status">Stock Status</label>
+			<label index="tx_ptgsastock_stock_status.name">Name</label>
+			<label index="tx_ptgsastock_stock_status.hint">Hint</label>
+			<label index="tx_ptgsastock_stock_status.image">Image</label>
+			<label index="tx_ptgsastock_stock_status.use_arcticle_stock_info">Use Stock Info from Article</label>
+			<label index="tx_ptgsastock_stock_treshold_set">Stock Treshold Set</label>
+			<label index="tx_ptgsastock_stock_treshold_set.description">Description</label>
+			<label index="tx_ptgsastock_stock_treshold_set.stock_treshold">Stock Tresholds</label>
+			<label index="tx_ptgsastock_stock_treshold">Stock Treshold</label>
+			<label index="tx_ptgsastock_stock_treshold.lower_bound">Lower Bound</label>
+			<label index="tx_ptgsastock_stock_treshold.upper_bound">Upper Bound</label>
+			<label index="tx_ptgsastock_stock_treshold.stock_status">Stock Status</label>
+			<label index="tx_ptgsastock_stock_treshold.description">Description</label>
+			<label index="tx_ptgsastock_stock_articleextension">Stock Data Article Extension</label>
+			<label index="tx_ptgsastock_stock_articleextension.show_stock">Show stock information for article</label>
+			<label index="tx_ptgsastock_stock_articleextension.description">Stock Information</label>
+			<label index="tx_ptgsastock_stock_articleextension.base_article">Base Article</label>
+			<label index="tx_ptgsastock_stock_articleextension.stock_article">Stock Article</label>
+			<label index="tx_ptgsastock_stock_articleextension.stock_category">Stock Category</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tx_ptgsastock_stockcount">Offene Bestandsänderungen</label>
+			<label index="tx_ptgsastock_stockcount.base_order">Bestellung</label>
+			<label index="tx_ptgsastock_stockcount.order_state">Bestellstatus</label>
+			<label index="tx_ptgsastock_stockcount.qty">Anzahl</label>
+			<label index="tx_ptgsastock_stockcount.artikel_nummer">Artikelnummer</label>
+			<label index="tx_ptgsastock_stock_status">Bestandsstatus</label>
+			<label index="tx_ptgsastock_stock_status.name">Name</label>
+			<label index="tx_ptgsastock_stock_status.hint">Hinweis</label>
+			<label index="tx_ptgsastock_stock_status.image">Bild</label>
+			<label index="tx_ptgsastock_stock_status.use_arcticle_stock_info">Verwende Bestandsinformation von Artikel</label>
+			<label index="tx_ptgsastock_stock_treshold_set">Bestand-Schrankensatz</label>
+			<label index="tx_ptgsastock_stock_treshold_set.description">Beschreibung</label>
+			<label index="tx_ptgsastock_stock_treshold_set.stock_treshold">Bestandsschranken</label>
+			<label index="tx_ptgsastock_stock_treshold">Bestandsschranke</label>
+			<label index="tx_ptgsastock_stock_treshold.lower_bound">Untere Schranke</label>
+			<label index="tx_ptgsastock_stock_treshold.upper_bound">Obere Schranke</label>
+			<label index="tx_ptgsastock_stock_treshold.stock_status">Bestandsstatus</label>
+			<label index="tx_ptgsastock_stock_treshold.description">Beschreibung</label>
+			<label index="tx_ptgsastock_stock_articleextension">Bestandsdatenerweiterung Artikeldaten</label>
+			<label index="tx_ptgsastock_stock_articleextension.show_stock">Bestand für Artikel anzeigen</label>
+			<label index="tx_ptgsastock_stock_articleextension.description">Bestandsinformation</label>
+			<label index="tx_ptgsastock_stock_articleextension.base_article">Basisartikel</label>
+			<label index="tx_ptgsastock_stock_articleextension.stock_article">Bestandsartikel</label>
+			<label index="tx_ptgsastock_stock_articleextension.stock_category">Bestandskategorie</label>
+		</languageKey>
+	</data>
+</T3locallang>
