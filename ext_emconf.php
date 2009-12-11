@@ -32,10 +32,11 @@ $EM_CONF[$_EXTKEY] = array(
 	'version' => '0.0.2',
 	'constraints' => array(
 		'depends' => array(
-			'pt_tools' => '',
+			'pt_tools' => '1.0.0-',
             'pt_objectstorage' => '',
-            'pt_gsashop' => '',
-            'pt_gsaadmin' => '',
+            'pt_gsasocket' => '1.0.0-',
+            'pt_gsashop' => '1.0.0-',
+            'pt_gsaadmin' => '0.1.0-',
 		),
 		'conflicts' => array(
 		),
