@@ -132,9 +132,7 @@ class tx_ptgsastock_exec_checkout_articleDataHook extends tx_ptgsashop_pi1 imple
 		    $articleExtensionObj = new tx_ptgsastock_stock_articleextension($articleExtensionUid);
 		    $articleExtensionObj->decreaseStockBy($articleCountDiff);
             $articleExtensionObj->increaseTempStockCountBy($articleCountDiff);	
-            $this->setSessionArticleStockCountByArticleId($articleUid, $newArticleQuantity);
 		}
-
 	}
 	
 	
