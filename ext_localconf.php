@@ -23,11 +23,11 @@ if (TYPO3_MODE == 'FE') { // WARNING: do not remove this condition since this ma
 	 *********************************************/
 	
 	/* Show Stock Information in Article Info Box */
-    require(t3lib_extMgm::extPath('pt_gsastock').'res/hooks/class.tx_ptgsastock_hooks_ptgsashop_displayArticleInfobox_MarkerArrayHook.php');
+    require_once(t3lib_extMgm::extPath('pt_gsastock').'res/hooks/class.tx_ptgsastock_hooks_ptgsashop_displayArticleInfobox_MarkerArrayHook.php');
     $TYPO3_CONF_VARS['EXTCONF']['pt_gsashop']['pi2_hooks']['displayArticleInfobox_MarkerArrayHook'][] = 'tx_ptgsastock_hooks_ptgsashop_displayArticleInfobox_MarkerArrayHook';  // hook array (loop processing)
     
     /* Stock calculation in exec_checkout process */
-    require(t3lib_extMgm::extPath('pt_gsastock').'res/class.tx_ptgsastock_defaultStockCalculator.php');
+    require_once(t3lib_extMgm::extPath('pt_gsastock').'res/class.tx_ptgsastock_defaultStockCalculator.php');
     $TYPO3_CONF_VARS['EXTCONF']['pt_gsashop']['pi1_hooks']['exec_checkout_articleDataHook'] = 'EXT:pt_gsastock/res/class.tx_ptgsastock_defaultStockCalculator.php:tx_ptgsastock_defaultStockCalculator';
     $TYPO3_CONF_VARS['EXTCONF']['pt_gsashop']['pi3_hooks']['updateArtDistrQtyChangesConsequencesHook'][] = 'EXT:pt_gsastock/res/class.tx_ptgsastock_defaultStockCalculator.php:tx_ptgsastock_defaultStockCalculator';
     $TYPO3_CONF_VARS['EXTCONF']['pt_gsashop']['orderProcessor_hooks']['postOrderProcessingHook'][] = 'EXT:pt_gsastock/res/class.tx_ptgsastock_defaultStockCalculator.php:tx_ptgsastock_defaultStockCalculator->processPostOrderProcessingHook';
